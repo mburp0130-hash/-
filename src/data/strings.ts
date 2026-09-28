@@ -9,6 +9,8 @@ export const S = {
     archive: 'ARCHIVE',
     reset: '진행 초기화',
     resetConfirm: '발견한 세계선이 모두 삭제됩니다. 초기화할까요?',
+    resetYes: '초기화',
+    resetNo: '취소',
   },
   intro: {
     skip: 'SKIP',

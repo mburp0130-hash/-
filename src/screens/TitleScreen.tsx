@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { S } from '../data/strings';
 import { t } from '../config/timing';
 import { ScreenShell } from '../components/layout/ScreenShell';
@@ -24,8 +25,9 @@ export function TitleScreen() {
     track('loop_started', { source: 'title', from_worldline_id: null });
     dispatch({ type: 'CONTINUE' });
   };
+  const [confirmingReset, setConfirmingReset] = useState(false);
   const reset = () => {
-    if (!window.confirm(S.title.resetConfirm)) return;
+    setConfirmingReset(false);
     track('progress_reset', { discovered_count_before: count });
     resetProgress();
     dispatch({ type: 'RESET_PROGRESS' });
@@ -74,10 +76,24 @@ export function TitleScreen() {
             >
               {S.title.archive}
             </Button>
-            <div className="flex justify-center pt-2">
-              <button type="button" onClick={reset} className="text-[12px] text-dim underline underline-offset-4 min-h-11 px-3" data-testid="btn-reset">
-                {S.title.reset}
-              </button>
+            <div className="flex flex-col items-center pt-2">
+              {confirmingReset ? (
+                <div className="text-center" data-testid="reset-confirm">
+                  <p className="t-caption text-muted">{S.title.resetConfirm}</p>
+                  <div className="flex justify-center gap-2 mt-1">
+                    <button type="button" onClick={reset} className="text-[12px] text-danger min-h-11 px-3" data-testid="btn-reset-yes">
+                      {S.title.resetYes}
+                    </button>
+                    <button type="button" onClick={() => setConfirmingReset(false)} className="text-[12px] text-muted min-h-11 px-3">
+                      {S.title.resetNo}
+                    </button>
+                  </div>
+                </div>
+              ) : (
+                <button type="button" onClick={() => setConfirmingReset(true)} className="text-[12px] text-dim underline underline-offset-4 min-h-11 px-3" data-testid="btn-reset">
+                  {S.title.reset}
+                </button>
+              )}
             </div>
           </>
         )}
