@@ -1,0 +1,443 @@
+{
+  "schemaVersion": 1,
+  "event": {
+    "id": "constantinople_1453",
+    "title": "콘스탄티노폴리스 최후의 밤",
+    "titleEn": "THE LAST NIGHT OF CONSTANTINOPLE",
+    "dateLabel": "1453.05.28",
+    "isoDate": "1453-05-28",
+    "year": 1453,
+    "place": "Constantinople",
+    "placeKo": "콘스탄티노폴리스",
+    "arrivalLine": "포위 53일째 밤. 오스만군의 총공세까지 몇 시간 남았다.",
+    "contextFacts": [
+      {
+        "text": "1453년 4월 6일, 오스만 술탄 메흐메트 2세의 군대가 도시를 포위했다.",
+        "label": "historical_fact",
+        "certainty": "established"
+      },
+      {
+        "text": "방어군은 약 7천~8천 명, 공격군은 그 몇 배로 추정된다. 추정치는 사료마다 다르다.",
+        "label": "historical_fact",
+        "certainty": "estimate"
+      },
+      {
+        "text": "제노바 출신 지휘관 조반니 주스티니아니가 육지 성벽 방어의 핵심을 맡고 있다.",
+        "label": "historical_fact",
+        "certainty": "established"
+      },
+      {
+        "text": "며칠 전 오스만 진영 회의에서 재상 할릴 파샤는 포위를 풀자고 주장했다.",
+        "label": "historical_fact",
+        "certainty": "established"
+      }
+    ],
+    "originalOutcome": {
+      "text": "원래 역사: 5월 29일 새벽 도시는 함락되고, 황제 콘스탄티노스 11세는 전사한다.",
+      "label": "historical_fact",
+      "certainty": "established"
+    },
+    "sourcesNote": [
+      "포위 기간(4.6~5.29), 주스티니아니의 부상과 이탈, 할릴 파샤의 철군론은 일반적으로 받아들여지는 역사적 사실이다.",
+      "병력 규모는 사료마다 차이가 크므로 '추정'으로 표시한다.",
+      "케르코포르타 쪽문이 열려 있었다는 이야기는 후대 연대기(두카스)의 전승이며 논쟁적이다.",
+      "대항해시대는 1453년 이전부터 시작되었다. 함락과 대서양 진출의 인과관계는 학계에서 논쟁적이며, 이 게임에서는 '추정 결과'로만 다룬다."
+    ]
+  },
+  "choices": [
+    {
+      "id": "warn_defenders",
+      "order": 1,
+      "kind": "intervention",
+      "title": "방어측에 경고를 남긴다",
+      "titleEn": "WARN THE DEFENDERS",
+      "summary": "주스티니아니에게 미래의 쪽지 한 장.",
+      "detail": "\"새벽 공세 때 당신이 쓰러지면 성벽이 무너진다. 예비대를 성벽 뒤에 두어라.\" 믿을지는 그들의 몫이다.",
+      "ctaLabel": "이 순간을 바꾼다",
+      "teaserQuestion": "만약 성벽이 버텼다면?",
+      "worldlineId": "wl_walls_held"
+    },
+    {
+      "id": "silence_guns",
+      "order": 2,
+      "kind": "intervention",
+      "title": "오스만의 대포를 침묵시킨다",
+      "titleEn": "SILENCE THE GUNS",
+      "summary": "포대의 화약 일부를 적셔 총공세를 늦춘다.",
+      "detail": "새벽 공세는 대포 포격으로 시작될 예정이다. 화약이 젖으면 공세는 며칠 미뤄진다. 그 며칠이 무엇을 바꿀까?",
+      "ctaLabel": "이 순간을 바꾼다",
+      "teaserQuestion": "만약 대포가 침묵했다면?",
+      "worldlineId": "wl_silent_guns"
+    },
+    {
+      "id": "observe",
+      "order": 3,
+      "kind": "observation",
+      "title": "개입하지 않는다",
+      "titleEn": "ONLY OBSERVE",
+      "summary": "기록자로서 원래 역사를 끝까지 지켜본다.",
+      "detail": "아무것도 바꾸지 않는다. 대신 무엇이 이 도시의 운명을 결정했는지 직접 확인한다. 관측 기록은 다음 개입에 쓸 수 있다.",
+      "ctaLabel": "지켜본다",
+      "teaserQuestion": "원래 역사에서 결정적 순간은 언제였을까?",
+      "worldlineId": "wl_origin_observed"
+    }
+  ],
+  "metrics": [
+    {
+      "id": "bosporus_city",
+      "label": "보스포루스의 도시",
+      "indexLabel": "도시 규모",
+      "original": { "text": "이스탄불 · 인구 1,500만 명 이상", "index": 95, "label": "historical_fact" }
+    },
+    {
+      "id": "east_med_power",
+      "label": "동지중해의 패권",
+      "indexLabel": "오스만 영향력",
+      "original": { "text": "오스만 제국 (15세기~20세기 초)", "index": 90, "label": "historical_fact" }
+    },
+    {
+      "id": "trade_center",
+      "label": "세계 교역의 중심",
+      "indexLabel": "지중해 비중",
+      "original": { "text": "16세기 이후 대서양·인도양으로 이동", "index": 20, "label": "historical_fact" }
+    },
+    {
+      "id": "orthodox_center",
+      "label": "정교회 세계의 중심",
+      "indexLabel": "콘스탄티노폴리스의 종교적 영향력",
+      "original": { "text": "신자 수 최대는 러시아 정교회, 이스탄불 총대주교청은 명예상 수위", "index": 30, "label": "historical_fact" }
+    },
+    {
+      "id": "world_order",
+      "label": "2026 국제질서",
+      "indexLabel": "다극성",
+      "original": { "text": "미국 중심 질서 · 영어가 사실상 국제 공용어", "index": 45, "label": "historical_fact" }
+    }
+  ],
+  "worldlines": [
+    {
+      "id": "wl_walls_held",
+      "choiceId": "warn_defenders",
+      "isOrigin": false,
+      "name": "성벽이 버틴 세계",
+      "nameEn": "THE WALLS HELD",
+      "tagline": "도시는 살아남았고, 신앙의 중심은 옮겨가지 않았다.",
+      "intervention": {
+        "text": "당신의 쪽지가 새벽 공세 전에 주스티니아니에게 전달된다.",
+        "label": "player_intervention"
+      },
+      "timeline": [
+        {
+          "year": 1453,
+          "divergence": 15,
+          "headline": { "text": "총공세가 격퇴되다", "label": "simulated_consequence" },
+          "entries": [
+            { "category": "politics", "text": "주스티니아니가 부상당하지만 예비대가 곧바로 성벽 틈을 메운다.", "label": "simulated_consequence" },
+            { "category": "powers", "text": "5월 29일 정오, 오스만군이 공세를 멈추고 물러난다.", "label": "simulated_consequence" }
+          ],
+          "originalHistory": { "text": "5월 29일 새벽 도시는 함락되었다.", "label": "historical_fact" }
+        },
+        {
+          "year": 1500,
+          "divergence": 30,
+          "headline": { "text": "살아남은 도시국가", "label": "simulated_consequence" },
+          "entries": [
+            { "category": "politics", "text": "메흐메트 2세는 포위를 풀고 에디르네를 수도로 유지한다.", "label": "simulated_consequence" },
+            { "category": "trade", "text": "보스포루스는 비잔티움이 통행세를 걷는 국제 항로로 남는다.", "label": "simulated_consequence" },
+            { "category": "culture", "text": "그리스 학자들의 대규모 이탈리아 이주는 일어나지 않는다.", "label": "speculative_outcome" }
+          ],
+          "originalHistory": { "text": "이스탄불이 오스만 제국의 새 수도가 되었다.", "label": "historical_fact" }
+        },
+        {
+          "year": 1600,
+          "divergence": 45,
+          "headline": { "text": "정교회의 로마", "label": "speculative_outcome" },
+          "entries": [
+            { "category": "culture", "text": "정교회 세계의 중심은 계속 콘스탄티노폴리스에 머문다.", "label": "speculative_outcome" },
+            { "category": "powers", "text": "모스크바의 '제3의 로마' 사상은 힘을 얻지 못한다.", "label": "speculative_outcome" },
+            { "category": "powers", "text": "오스만은 도시를 우회해 아나톨리아와 중동으로 확장한다.", "label": "simulated_consequence" }
+          ],
+          "originalHistory": { "text": "오스만 제국이 헝가리부터 북아프리카까지 지배했다.", "label": "historical_fact" }
+        },
+        {
+          "year": 1800,
+          "divergence": 60,
+          "headline": { "text": "중립 해협의 시대", "label": "speculative_outcome" },
+          "entries": [
+            { "category": "politics", "text": "유럽 열강이 해협을 중립 수역으로 정하는 조약을 맺는다.", "label": "speculative_outcome" },
+            { "category": "trade", "text": "콘스탄티노폴리스가 흑해 곡물 무역의 금융 중심이 된다.", "label": "speculative_outcome" },
+            { "category": "technology", "text": "산업혁명의 증기선이 이 항구를 거쳐 흑해로 퍼진다.", "label": "speculative_outcome" }
+          ],
+          "originalHistory": { "text": "1798년 나폴레옹의 이집트 원정으로 오스만의 약화가 드러났다.", "label": "historical_fact" }
+        },
+        {
+          "year": 1900,
+          "divergence": 70,
+          "headline": { "text": "입헌 도시공화국", "label": "speculative_outcome" },
+          "entries": [
+            { "category": "politics", "text": "황실은 상징으로 남고, 도시공화국 헌법이 제정된다.", "label": "speculative_outcome" },
+            { "category": "powers", "text": "오스만 제국은 에디르네·부르사 중심의 개혁 국가로 존속한다.", "label": "speculative_outcome" },
+            { "category": "culture", "text": "여러 언어가 공존하는 국제 항구도시로 알려진다.", "label": "speculative_outcome" }
+          ],
+          "originalHistory": { "text": "오스만 제국은 '유럽의 병자'로 불리며 영토를 잃고 있었다.", "label": "historical_fact" }
+        },
+        {
+          "year": 2026,
+          "divergence": 80,
+          "headline": { "text": "콘스탄티노폴리스 자유시", "label": "speculative_outcome" },
+          "entries": [
+            { "category": "powers", "text": "인구 약 480만의 중립 자유시, 세계 5위권 해운 허브.", "label": "speculative_outcome" },
+            { "category": "culture", "text": "총대주교청이 2억 명 넘는 정교회 신자의 실질적 중심이다.", "label": "speculative_outcome" },
+            { "category": "politics", "text": "'이스탄불'이라는 도시 이름은 존재하지 않는다.", "label": "speculative_outcome" }
+          ],
+          "originalHistory": { "text": "이스탄불은 인구 1,500만 명 이상의 튀르키예 최대 도시다.", "label": "historical_fact" }
+        }
+      ],
+      "butterfly": [
+        { "id": "b1", "year": 1453, "text": "미래에서 온 쪽지", "label": "player_intervention" },
+        { "id": "b2", "year": 1453, "text": "예비대가 성벽 틈을 메움", "label": "simulated_consequence" },
+        { "id": "b3", "year": 1453, "text": "총공세 격퇴, 포위 해제", "label": "simulated_consequence" },
+        { "id": "b4", "year": 1500, "text": "보스포루스가 국제 항로로 남음", "label": "simulated_consequence" },
+        { "id": "b5", "year": 1600, "text": "정교회의 중심이 이동하지 않음", "label": "speculative_outcome" },
+        { "id": "b6", "year": 2026, "text": "콘스탄티노폴리스 자유시", "label": "speculative_outcome" }
+      ],
+      "world2026": {
+        "headline": { "text": "이스탄불 대신, 자유시 콘스탄티노폴리스", "label": "speculative_outcome" },
+        "summary": { "text": "천 년 된 성벽 안쪽은 지금 세계에서 가장 바쁜 중립 항구다.", "label": "speculative_outcome" },
+        "bulletinsTitle": "2026년 이 세계의 가상 뉴스",
+        "bulletins": [
+          { "text": "자유시, 흑해 해운 협정 의장국으로 선출", "label": "speculative_outcome" },
+          { "text": "성 소피아 대성당 봉헌 1,489주년 미사 거행", "label": "speculative_outcome" },
+          { "text": "해협 통행료 인하 두고 열강 협상 재개", "label": "speculative_outcome" }
+        ]
+      },
+      "comparison": {
+        "bosporus_city": { "text": "콘스탄티노폴리스 자유시 · 약 480만 명", "index": 45, "label": "speculative_outcome" },
+        "east_med_power": { "text": "어느 한 제국도 독점하지 못함", "index": 55, "label": "speculative_outcome" },
+        "trade_center": { "text": "대서양 중심, 흑해 항로의 비중 증가", "index": 30, "label": "speculative_outcome" },
+        "orthodox_center": { "text": "콘스탄티노폴리스 총대주교청이 실질적 중심", "index": 90, "label": "speculative_outcome" },
+        "world_order": { "text": "원래와 비슷한 다극화, 중립 해협 체제", "index": 50, "label": "speculative_outcome" }
+      },
+      "unlocksNotes": [
+        { "choiceId": "silence_guns", "text": "세계선 기록: 도시를 지켜도 오스만의 확장은 멈추지 않았다. 싸우지 않고 끝낸다면?" },
+        { "choiceId": "observe", "text": "세계선 기록: 원래 역사에서 방어선이 무너진 정확한 순간을 확인해 보라." }
+      ]
+    },
+    {
+      "id": "wl_silent_guns",
+      "choiceId": "silence_guns",
+      "isOrigin": false,
+      "name": "대포가 침묵한 세계",
+      "nameEn": "THE SILENT GUNS",
+      "tagline": "며칠의 지연이 바다의 역사를 바꿨다.",
+      "intervention": {
+        "text": "총공세 전날 밤, 당신은 대포 진지의 화약 일부를 적신다.",
+        "label": "player_intervention"
+      },
+      "timeline": [
+        {
+          "year": 1453,
+          "divergence": 20,
+          "headline": { "text": "총공세가 멈추다", "label": "simulated_consequence" },
+          "entries": [
+            { "category": "technology", "text": "새벽 공세를 여는 포격이 불가능해져 공세가 연기된다.", "label": "simulated_consequence" },
+            { "category": "politics", "text": "구원군이 온다는 소문 속에 할릴 파샤의 철군론이 힘을 얻는다.", "label": "simulated_consequence" },
+            { "category": "powers", "text": "6월 초, 오스만군이 포위를 풀고 물러난다.", "label": "simulated_consequence" }
+          ],
+          "originalHistory": { "text": "5월 29일 새벽 도시는 함락되었다.", "label": "historical_fact" }
+        },
+        {
+          "year": 1500,
+          "divergence": 35,
+          "headline": { "text": "베네치아의 바다", "label": "simulated_consequence" },
+          "entries": [
+            { "category": "trade", "text": "베네치아가 비잔티움을 보호하는 대가로 동방 교역을 독점한다.", "label": "simulated_consequence" },
+            { "category": "powers", "text": "오스만의 서진이 멈추고 헝가리가 발칸의 강국이 된다.", "label": "speculative_outcome" },
+            { "category": "trade", "text": "대서양 항해 계획들은 후원자를 찾기 어려워진다.", "label": "speculative_outcome" }
+          ],
+          "originalHistory": { "text": "1498년 바스쿠 다 가마가 인도 항로를 열었다.", "label": "historical_fact" }
+        },
+        {
+          "year": 1600,
+          "divergence": 55,
+          "headline": { "text": "조용한 대서양", "label": "speculative_outcome" },
+          "entries": [
+            { "category": "trade", "text": "향신료는 여전히 지중해로 흐르고, 우회 항로의 이익은 작다.", "label": "speculative_outcome" },
+            { "category": "powers", "text": "아메리카 식민화는 느리고, 해안 거점에 머문다.", "label": "speculative_outcome" },
+            { "category": "culture", "text": "르네상스는 베네치아와 비잔티움을 잇는 동지중해에서 꽃핀다.", "label": "speculative_outcome" }
+          ],
+          "originalHistory": { "text": "영국(1600)·네덜란드(1602) 동인도회사가 설립되었다.", "label": "historical_fact" }
+        },
+        {
+          "year": 1800,
+          "divergence": 75,
+          "headline": { "text": "지중해의 산업화", "label": "speculative_outcome" },
+          "entries": [
+            { "category": "technology", "text": "산업혁명이 북이탈리아와 네덜란드에서 동시에 시작된다.", "label": "speculative_outcome" },
+            { "category": "powers", "text": "아메리카 내륙은 대부분 원주민 연합들이 통치한다.", "label": "speculative_outcome" },
+            { "category": "trade", "text": "베네치아·비잔티움 동맹이 흑해와 지중해 해운을 장악한다.", "label": "speculative_outcome" }
+          ],
+          "originalHistory": { "text": "영국에서 산업혁명이 진행 중이었다.", "label": "historical_fact" }
+        },
+        {
+          "year": 1900,
+          "divergence": 85,
+          "headline": { "text": "다극의 세계", "label": "speculative_outcome" },
+          "entries": [
+            { "category": "politics", "text": "어느 한 제국도 세계의 4분의 1을 지배하지 못한다.", "label": "speculative_outcome" },
+            { "category": "powers", "text": "오스만은 아나톨리아와 페르시아만 중심의 내륙 제국이 된다.", "label": "speculative_outcome" },
+            { "category": "culture", "text": "국제 외교의 공용어는 이탈리아어다.", "label": "speculative_outcome" }
+          ],
+          "originalHistory": { "text": "유럽 열강이 아프리카와 아시아 대부분을 식민 지배했다.", "label": "historical_fact" }
+        },
+        {
+          "year": 2026,
+          "divergence": 95,
+          "headline": { "text": "지중해가 세계의 중심", "label": "speculative_outcome" },
+          "entries": [
+            { "category": "powers", "text": "세계 최대 경제권은 '지중해 연합'이다.", "label": "speculative_outcome" },
+            { "category": "politics", "text": "아메리카에는 원주민 계승 국가들이 다수 존재한다.", "label": "speculative_outcome" },
+            { "category": "culture", "text": "콘스탄티노폴리스(약 900만)는 베네치아와 맺은 연방의 수도다.", "label": "speculative_outcome" }
+          ],
+          "originalHistory": { "text": "영어가 사실상 국제 공용어이고, 대서양 국가들이 국제질서를 주도한다.", "label": "historical_fact" }
+        }
+      ],
+      "butterfly": [
+        { "id": "b1", "year": 1453, "text": "젖은 화약", "label": "player_intervention" },
+        { "id": "b2", "year": 1453, "text": "총공세 연기", "label": "simulated_consequence" },
+        { "id": "b3", "year": 1453, "text": "철군론 승리, 포위 해제", "label": "simulated_consequence" },
+        { "id": "b4", "year": 1500, "text": "베네치아의 동방 교역 독점", "label": "simulated_consequence" },
+        { "id": "b5", "year": 1500, "text": "대서양 진출 동기 약화", "label": "speculative_outcome" },
+        { "id": "b6", "year": 1600, "text": "식민화 경로 축소", "label": "speculative_outcome" },
+        { "id": "b7", "year": 2026, "text": "지중해 중심의 다극 세계", "label": "speculative_outcome" }
+      ],
+      "world2026": {
+        "headline": { "text": "대서양이 아닌 지중해의 세기", "label": "speculative_outcome" },
+        "summary": { "text": "세계 지도의 중심에는 여전히 지중해가 있고, 아메리카는 다른 이름들로 가득하다.", "label": "speculative_outcome" },
+        "bulletinsTitle": "2026년 이 세계의 가상 뉴스",
+        "bulletins": [
+          { "text": "지중해 연합 GDP, 12년 연속 세계 1위", "label": "speculative_outcome" },
+          { "text": "베네치아-콘스탄티노폴리스 연방, 수도 이전 논쟁", "label": "speculative_outcome" },
+          { "text": "아나톨리아 술탄국, 페르시아만 철도 개통", "label": "speculative_outcome" }
+        ]
+      },
+      "comparison": {
+        "bosporus_city": { "text": "콘스탄티노폴리스 · 약 900만 명, 연방 수도", "index": 70, "label": "speculative_outcome" },
+        "east_med_power": { "text": "베네치아·비잔티움 해양 동맹", "index": 25, "label": "speculative_outcome" },
+        "trade_center": { "text": "여전히 지중해", "index": 85, "label": "speculative_outcome" },
+        "orthodox_center": { "text": "콘스탄티노폴리스, 라틴 교회와 긴밀한 공존", "index": 60, "label": "speculative_outcome" },
+        "world_order": { "text": "지중해 연합 중심의 다극 질서", "index": 85, "label": "speculative_outcome" }
+      },
+      "unlocksNotes": [
+        { "choiceId": "warn_defenders", "text": "세계선 기록: 싸우지 않고 물러난 술탄은 권위를 잃었다. 싸워서 이긴다면?" },
+        { "choiceId": "observe", "text": "세계선 기록: 원래 역사의 오스만 진영은 무엇으로 철군론을 이겨냈을까?" }
+      ]
+    },
+    {
+      "id": "wl_origin_observed",
+      "choiceId": "observe",
+      "isOrigin": true,
+      "name": "원래의 세계",
+      "nameEn": "ORIGIN CONFIRMED",
+      "tagline": "아무것도 바꾸지 않았다. 대신 역사의 이음새를 보았다.",
+      "intervention": null,
+      "timeline": [
+        {
+          "year": 1453,
+          "divergence": 0,
+          "headline": { "text": "새벽, 성벽이 무너지다", "label": "historical_fact" },
+          "entries": [
+            { "category": "politics", "text": "주스티니아니가 부상으로 물러나자 방어선이 흔들린다.", "label": "historical_fact" },
+            { "category": "powers", "text": "5월 29일 도시 함락. 콘스탄티노스 11세 전사.", "label": "historical_fact" },
+            { "category": "culture", "text": "천 년 넘게 이어진 동로마(비잔티움) 제국이 끝난다.", "label": "historical_fact" }
+          ],
+          "originalHistory": null
+        },
+        {
+          "year": 1500,
+          "divergence": 0,
+          "headline": { "text": "오스만의 새 수도", "label": "historical_fact" },
+          "entries": [
+            { "category": "politics", "text": "이스탄불이 오스만 제국의 수도가 된다.", "label": "historical_fact" },
+            { "category": "trade", "text": "1498년 바스쿠 다 가마가 인도 항로를 연다.", "label": "historical_fact" },
+            { "category": "culture", "text": "그리스 학자와 문헌이 이탈리아 르네상스에 영향을 준다.", "label": "historical_fact" }
+          ],
+          "originalHistory": null
+        },
+        {
+          "year": 1600,
+          "divergence": 0,
+          "headline": { "text": "오스만 제국의 절정", "label": "historical_fact" },
+          "entries": [
+            { "category": "powers", "text": "오스만 제국이 헝가리부터 북아프리카까지 지배한다.", "label": "historical_fact" },
+            { "category": "trade", "text": "영국(1600)·네덜란드(1602) 동인도회사가 설립된다.", "label": "historical_fact" },
+            { "category": "culture", "text": "모스크바를 '제3의 로마'로 보는 사상이 등장한다.", "label": "historical_fact" }
+          ],
+          "originalHistory": null
+        },
+        {
+          "year": 1800,
+          "divergence": 0,
+          "headline": { "text": "무게중심은 대서양으로", "label": "historical_fact" },
+          "entries": [
+            { "category": "technology", "text": "영국에서 산업혁명이 진행 중이다.", "label": "historical_fact" },
+            { "category": "powers", "text": "1798년 나폴레옹의 이집트 원정, 오스만의 약화가 드러난다.", "label": "historical_fact" },
+            { "category": "trade", "text": "세계 교역의 중심이 지중해에서 대서양으로 옮겨갔다.", "label": "historical_fact" }
+          ],
+          "originalHistory": null
+        },
+        {
+          "year": 1900,
+          "divergence": 0,
+          "headline": { "text": "'유럽의 병자'", "label": "historical_fact" },
+          "entries": [
+            { "category": "politics", "text": "오스만 제국은 '유럽의 병자'로 불리며 영토를 잃는다.", "label": "historical_fact" },
+            { "category": "powers", "text": "그리스·세르비아 등 발칸 국가들이 독립했다.", "label": "historical_fact" },
+            { "category": "trade", "text": "1869년 수에즈 운하가 개통되었다.", "label": "historical_fact" }
+          ],
+          "originalHistory": null
+        },
+        {
+          "year": 2026,
+          "divergence": 0,
+          "headline": { "text": "우리가 아는 세계", "label": "historical_fact" },
+          "entries": [
+            { "category": "politics", "text": "이스탄불은 튀르키예 공화국(1923 수립)의 최대 도시다.", "label": "historical_fact" },
+            { "category": "culture", "text": "하기아 소피아는 2020년 다시 모스크로 전환되었다.", "label": "historical_fact" },
+            { "category": "powers", "text": "보스포루스 해협 통항은 1936년 몽트뢰 협약이 규정한다.", "label": "historical_fact" }
+          ],
+          "originalHistory": null
+        }
+      ],
+      "butterfly": [
+        { "id": "b1", "year": 1453, "text": "주스티니아니 부상", "label": "historical_fact" },
+        { "id": "b2", "year": 1453, "text": "육지 성벽 방어선 붕괴", "label": "historical_fact" },
+        { "id": "b3", "year": 1453, "text": "5월 29일 함락", "label": "historical_fact" },
+        { "id": "b4", "year": 1500, "text": "오스만의 새 수도 이스탄불", "label": "historical_fact" },
+        { "id": "b5", "year": 1600, "text": "동지중해의 오스만 패권", "label": "historical_fact" },
+        { "id": "b6", "year": 2026, "text": "튀르키예 공화국의 이스탄불", "label": "historical_fact" }
+      ],
+      "world2026": {
+        "headline": { "text": "우리가 알고 있는 2026년", "label": "historical_fact" },
+        "summary": { "text": "이 세계선은 실제 역사와 같다. 아래는 모두 사실이다.", "label": "historical_fact" },
+        "bulletinsTitle": "관측으로 찾은 역사의 이음새",
+        "bulletins": [
+          { "text": "방어선은 주스티니아니가 물러난 직후 무너졌다.", "label": "historical_fact" },
+          { "text": "총공세 며칠 전, 오스만 진영에서는 철군론이 나왔다.", "label": "historical_fact" },
+          { "text": "새벽 총공세는 대포 포격과 함께 시작되었다.", "label": "historical_fact" }
+        ]
+      },
+      "comparison": {
+        "bosporus_city": { "text": "이스탄불 · 인구 1,500만 명 이상", "index": 95, "label": "historical_fact" },
+        "east_med_power": { "text": "오스만 제국 (15세기~20세기 초)", "index": 90, "label": "historical_fact" },
+        "trade_center": { "text": "16세기 이후 대서양·인도양으로 이동", "index": 20, "label": "historical_fact" },
+        "orthodox_center": { "text": "신자 수 최대는 러시아 정교회, 이스탄불 총대주교청은 명예상 수위", "index": 30, "label": "historical_fact" },
+        "world_order": { "text": "미국 중심 질서 · 영어가 사실상 국제 공용어", "index": 45, "label": "historical_fact" }
+      },
+      "unlocksNotes": [
+        { "choiceId": "warn_defenders", "text": "관측 기록: 방어선은 주스티니아니가 쓰러진 직후 무너졌다." },
+        { "choiceId": "silence_guns", "text": "관측 기록: 총공세 며칠 전, 할릴 파샤는 철군을 주장했다." }
+      ]
+    }
+  ]
+}
