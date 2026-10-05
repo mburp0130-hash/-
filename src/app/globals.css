@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+html, body { height: 100%; }
+body { margin: 0; font-family: -apple-system, "Pretendard", "Noto Sans KR", system-ui, sans-serif; color: #0f172a; background: #f8fafc; }
+
+.heat-label {
+  display: flex; align-items: center; justify-content: center;
+  width: 34px; height: 34px; border-radius: 9999px;
+  font-weight: 700; font-size: 13px; color: #fff;
+  border: 2px solid #fff; box-shadow: 0 2px 8px rgba(0,0,0,.3);
+}
+.heat-label.selected { outline: 3px solid #2563eb; outline-offset: 2px; }
+.leaflet-container { font-family: inherit; }
